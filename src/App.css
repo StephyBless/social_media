@@ -1,0 +1,305 @@
+/* App.css */
+
+/* CSS Variables */
+:root {
+  --primary-color: #254ea9;
+  --secondary-color: #4c5f6bba;
+
+  --background-color: #f4f2ee;
+  --text-color: #333;
+  --border-color: #c1c8d0;
+  --shadow-color: rgba(138, 81, 81, 0.1);
+  --input-bg-color: #ffffff;
+}
+
+/* General Styles */
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background-color: var(--background-color);
+  margin: 0;
+  padding: 0;
+  line-height: 1.6;
+}
+
+.app {
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+/* Navigation */
+nav {
+  background-color: #333;
+  padding: 10px;
+}
+
+nav ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: space-around;
+}
+
+nav li {
+  margin: 0;
+}
+
+nav a {
+  text-decoration: none;
+  color: #ffffff;
+  font-weight: bold;
+  font-size: 16px;
+  transition: color 0.3s ease;
+}
+
+nav a:hover {
+  color: var(--primary-color);
+}
+
+/* Home Page */
+.home {
+  border: 1px solid var(--border-color);
+  padding: 20px;
+  margin-bottom: 20px;
+  background-color: #ffffff;
+  box-shadow: 0 4px 8px var(--shadow-color);
+  max-width: 800px;
+  margin: 20px auto;
+}
+
+.home h2 {
+  color: var(--text-color);
+  font-size: 24px;
+  margin-bottom: 20px;
+}
+
+.home .post {
+  border: 1px solid var(--border-color);
+  padding: 15px;
+  margin-bottom: 20px;
+  background-color: #fafafa;
+  box-shadow: 0 2px 4px var(--shadow-color);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.home .post:hover {
+  transform: scale(1.02);
+  box-shadow: 0 4px 8px var(--shadow-color);
+}
+
+.home .post h3 {
+  color: var(--text-color);
+  font-size: 20px;
+  margin-top: 0;
+}
+
+.home .post p {
+  color: #555;
+}
+
+.home .post img,
+.home .post video {
+  max-width: 100%;
+  height: auto;
+  margin-top: 10px;
+}
+
+.home .post button {
+  background-color: var(--primary-color);
+  color: #fff;
+  padding: 8px 16px;
+  border: none;
+  border-radius: 42px;
+  font-size: 16px;
+  cursor: pointer;
+  margin-right: 10px;
+  transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.home .post button:hover {
+  background-color: var(--secondary-color);
+  transform: scale(1.05);
+}
+
+.home .post ul {
+  list-style: none;
+  padding: 0;
+}
+
+.home .post li {
+  margin-bottom: 5px;
+}
+
+/* Create Post Form */
+.create-post {
+  max-width: 600px;
+  margin: 20px auto;
+  padding: 20px;
+  border: 1px solid var(--border-color);
+  
+  background-color: #fff;
+  box-shadow: 0 4px 8px var(--shadow-color);
+}
+
+.create-post h2 {
+  color: var(--text-color);
+  font-size: 22px;
+  margin-bottom: 20px;
+}
+
+.create-post input,
+.create-post textarea {
+  width: 100%;
+  margin: 10px 0;
+  padding: 10px;
+  border: 1px solid var(--border-color);
+  border-radius: 25px;
+  background-color: var(--input-bg-color);
+  box-sizing: border-box;
+  transition: border-color 0.3s ease;
+}
+
+.create-post input:focus,
+.create-post textarea:focus {
+  border-color: var(--primary-color);
+  outline: none;
+}
+
+.create-post button {
+  background-color: var(--primary-color);
+  color: #fff;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 42px;
+  font-size: 16px;
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.create-post button:hover {
+  background-color: var(--secondary-color);
+  transform: scale(1.05);
+}
+
+/* Comment Input */
+.comment-input {
+  margin-top: 10px;
+  padding: 15px;
+  width: calc(100% - 20px);
+  border: 1px solid var(--border-color);
+  border-radius: 25px;
+  background-color: var(--input-bg-color);
+}
+
+.comment-button {
+  background-color: var(--primary-color);
+  color: #fff;
+  padding: 2px 10px;
+  border: none;
+  border-radius: 42px;
+  font-size: 16px;
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.comment-button:hover {
+  background-color: var(--secondary-color);
+  transform: scale(1.05);
+}
+
+/* Animations */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+.post {
+  animation: fadeIn 1s ease-in;
+}
+/* App.css */
+nav a i {
+  margin-right: 8px;
+}
+
+/* Include other styles as needed */
+/* App.css or any relevant CSS file */
+.post {
+  border: 1px solid #ddd;
+  padding: 15px;
+  margin-bottom: 20px;
+  background-color: #fafafa;
+  border-radius: 42px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  border-radius: 8px;
+}
+
+.delete-btn {
+  background-color: #f44336; /* Red color for delete */
+  color: #fff;
+  padding: 8px 16px;
+  border: none;
+  border-radius: 42px; /* Curved corners */
+  cursor: pointer;
+  font-size: 16px;
+  transition: background-color 0.3s ease;
+}
+
+.delete-btn:hover {
+  background-color: #e53935;
+}
+
+.icon {
+  margin-right: 8px;
+}
+/* Add this to your existing CSS */
+
+/* Share Button */
+.share-btn {
+  background-color: var(--primary-color); /* Use primary color for the button */
+  color: #fff;
+  padding: 8px 16px;
+  border: none;
+  border-radius: 42px; /* Curved corners */
+  font-size: 16px;
+  cursor: pointer;
+  margin-right: 10px; /* Add some space between buttons */
+  transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.share-btn:hover {
+  background-color: var(--secondary-color); /* Slightly darker on hover */
+  transform: scale(1.05);
+}
+
+.icon {
+  margin-right: 8px;
+}
+/* App.css */
+.app {
+  text-align: center;
+}
+
+
+
+.icon {
+  margin-right: 0.5rem;
+}
+
+.logo-container {
+  margin-bottom: 1rem;
+}
+
+.App-logo {
+  height: 60px; /* Adjust as needed */
+  pointer-events: none;
+}
+
+.App-link {
+  color: #61dafb;
+}
+
+

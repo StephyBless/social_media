@@ -1,0 +1,29 @@
+/* ExampleComponent.css */
+.example {
+    padding: 20px;
+    background-color: #fff;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 25px;
+    text-align: center;
+}
+
+.example .icon {
+    margin-right: 8px;
+}
+
+.example .btn {
+    background-color: #4caf50;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 25px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: background-color 0.3s ease;
+    display: inline-flex;
+    align-items: center;
+}
+
+.example .btn:hover {
+    background-color: #45a049;
+}
